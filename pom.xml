@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>mybatis_generator</module>
+        <module>cloud-provide-payment</module>
     </modules>
 
     <properties>
