@@ -6,8 +6,8 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
 @MapperScan("org.example.mapper")
-public class Main {
+public class Provider {
     public static void main(String[] args) {
-        SpringApplication.run(Main.class, args);
+        SpringApplication.run(Provider.class, args);
     }
 }
