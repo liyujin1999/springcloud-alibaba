@@ -9,7 +9,7 @@ import javax.persistence.*;
 /**
  * 表名：t_pay
  * 表注释：支付交易表
-*/
+ */
 @Table(name = "t_pay")
 @Schema(title = "支付交易表实体类")
 public class Pay {

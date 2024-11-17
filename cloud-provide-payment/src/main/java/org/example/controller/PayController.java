@@ -5,7 +5,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.example.entities.Pay;
-import org.example.entities.PayDTO;
+import org.example.entity.PayDTO;
 import org.example.resp.ResultData;
 import org.example.service.PayService;
 import org.springframework.beans.BeanUtils;
