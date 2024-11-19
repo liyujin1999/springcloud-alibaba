@@ -9,6 +9,7 @@ import org.example.entity.PayDTO;
 import org.example.resp.ResultData;
 import org.example.service.PayService;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -60,5 +61,13 @@ public class PayController {
     public ResultData<List<Pay>> getAllPay(){
         List<Pay> payList = payService.getAll();
         return ResultData.success(payList);
+    }
+
+    @Value("${server.port}")
+    private String port;
+    @GetMapping("/pay/get/info")
+    public ResultData<String> getInfo(@Value("${atguigu.info}") String info){
+
+        return ResultData.success("atguiguInfo: " + info + "\t" + "port: "+port);
     }
 }
