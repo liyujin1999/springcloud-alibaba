@@ -10,8 +10,8 @@ import tk.mybatis.spring.annotation.MapperScan;
 @MapperScan("org.example.mapper")
 @EnableDiscoveryClient
 @RefreshScope
-public class Provider {
+public class Provider01 {
     public static void main(String[] args) {
-        SpringApplication.run(Provider.class, args);
+        SpringApplication.run(Provider01.class, args);
     }
 }
