@@ -15,6 +15,7 @@
         <module>cloud-api-commons</module>
         <module>cloud-provide-payment02</module>
         <module>cloud-consumer-feign-order</module>
+        <module>cloud-gateway</module>
     </modules>
 
     <properties>
