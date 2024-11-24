@@ -10,3 +10,5 @@ mybatis_generator:代码生成器模块 不需要启动服务
 
 #1.启动consul服务 下载地址：https://developer.hashicorp.com/consul/install
 
+#2.下载安装zipkin 下载地址：https://zipkin.io/pages/quickstart.html
+
