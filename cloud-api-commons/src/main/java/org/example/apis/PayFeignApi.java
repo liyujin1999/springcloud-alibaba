@@ -1,5 +1,6 @@
 package org.example.apis;
 
+import org.example.config.FeignConfiguration;
 import org.example.entity.PayDTO;
 import org.example.resp.ResultData;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -8,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-//@FeignClient(value = "cloud-payment-service")
-@FeignClient(value = "cloud-gateway")
+@FeignClient(value = "cloud-payment-service", configuration = FeignConfiguration.class)
+//@FeignClient(value = "cloud-gateway", configuration = FeignConfiguration.class)
 public interface PayFeignApi {
 
     //新增一条支付记录

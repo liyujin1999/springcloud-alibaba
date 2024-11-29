@@ -55,9 +55,9 @@ public class PayController {
         if(id < 0) throw new RuntimeException("id不能为负数");
         Pay pay = null;
         try {
-            Thread.sleep(63000);
+//            Thread.sleep(63000);
             pay = payService.getById(id);
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
 

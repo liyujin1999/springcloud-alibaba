@@ -8,8 +8,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableDiscoveryClient //该注解用于向使用consul为注册中心时注册服务
 @EnableFeignClients//启用feign客户端,定义服务+绑定接口，以声明式的方法优雅而简单的实现服务调用
-public class OpenFeign {
+public class FeignOrder {
     public static void main(String[] args) {
-        SpringApplication.run(OpenFeign.class, args);
+        SpringApplication.run(FeignOrder.class, args);
     }
 }
